@@ -1,9 +1,13 @@
 # Drought-flood-abrupt-alternations-affect-major-crop-yields-worldwide
-Figure1a
-Figure1a_1
-## 1. Correlation Between Drought–Flood Abrupt Alternation Events and Crop Yield Anomalies
+
+## Figure1a
+
+### Figure1a_1
+
+#### 1. Correlation Between Drought–Flood Abrupt Alternation Events and Crop Yield Anomalies
 
 **Function**
+
 Analyzes the relationship between drought–flood abrupt alternation events (LDFAI) of varying intensity and detrended crop yield residuals across crop phenological stages, and compares SPI-LDFAI with SPEI-LDFAI.
 
 **Input**
