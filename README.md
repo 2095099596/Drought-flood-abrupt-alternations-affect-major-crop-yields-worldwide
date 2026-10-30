@@ -1,5 +1,21 @@
 # Drought-flood-abrupt-alternations-affect-major-crop-yields-worldwide
 
+## Main: Crop Yield Residual Calculation
+
+**Function**
+
+Calculates gridded crop yield residuals under different LDFAI thresholds across three phenological stages (planting, growing, and harvesting). Supports multiple detrending methods and provides the fundamental dataset for subsequent figures and analyses.
+
+**Input**
+- Crop yield data (`merged_yield_data.nc`)
+- Crop phenology data (`*.crop.calendar.fill.nc`)
+- Monthly LDFAI data (`.nc`)
+
+**Output**
+- Gridded mean yield residuals for three phenological stages under different LDFAI thresholds (`.nc`)
+- Best-fit trend model maps (`.nc`)
+- Results from linear (`linear_bic`), quadratic (`quadratic_bic`), and multi-model (`multimodel_aic`) detrending methods
+
 ## Figure1a
 
 ### Figure1a_1
