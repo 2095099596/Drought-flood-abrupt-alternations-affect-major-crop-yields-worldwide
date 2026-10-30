@@ -1,21 +1,3 @@
-# ============================================================
-# 全部样本 + 正负 LDFAI + 分物候期相关分析脚本
-# 加入：随机输出 LDFAI-残差配对样本，用于检查配对是否成功
-#
-# 功能：
-# 1. 不按阈值筛选，使用全部样本；
-# 2. 分别计算种植期、生长期、收获期；
-# 3. 同时考虑 LDFAI 原始值、绝对强度、正向急转、负向急转；
-# 4. 同时比较 SPI-LDFAI 和 SPEI-LDFAI；
-# 5. 只输出 CSV，不输出 NC；
-# 6. 运行过程中随机打印若干 LDFAI-产量残差配对样本。
-#
-# 输出：
-# 1. event_ldfai_abs_gt1~gt9_correlation_summary.csv
-# 2. event_ldfai_abs_gt1~gt9_spi_spei_compare.csv
-# 3. 可选：event_ldfai_abs_gt1~gt9_pairs.csv
-# ============================================================
-
 import os
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("MKL_NUM_THREADS", "1")
