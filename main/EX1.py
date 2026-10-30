@@ -1,17 +1,9 @@
 """
 加速版：LDFAI 物候期产量残差计算脚本
 
-主要优化：
-1. 年份从产量 NC 的真实 time 坐标解析，不再硬编码 1981-2016。
-2. 物候 NC 文件只读取一次，不再每个格点、每个变量重复打开。
-3. LDFAI NC 文件只读取一次，不再每个格点、每个物候期重复打开。
-4. linear / quadratic / cubic 使用 np.polyfit，log 使用最小二乘，只有 gaussian 使用 curve_fit。
-5. 删除无用的邻域均值计算。
-6. 减少逐格点 print。
-7. 支持可选并行；默认 n_jobs=1，建议先单进程跑通，再改成 4、8 等。
 """
 
-# 必须尽量放在 numpy/scipy 导入前，避免并行时 BLAS 线程过度竞争
+
 import os
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("MKL_NUM_THREADS", "1")
