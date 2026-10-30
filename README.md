@@ -1,6 +1,6 @@
 # Drought-flood-abrupt-alternations-affect-major-crop-yields-worldwide
 
-## Main: Crop Yield Residual Calculation
+## Main: Crop Yield Residual Calculation（EX1）
 
 **Function**
 
@@ -15,6 +15,22 @@ Calculates gridded crop yield residuals under different LDFAI thresholds across 
 - Gridded mean yield residuals for three phenological stages under different LDFAI thresholds (`.nc`)
 - Best-fit trend model maps (`.nc`)
 - Results from linear (`linear_bic`), quadratic (`quadratic_bic`), and multi-model (`multimodel_aic`) detrending methods
+
+## Main: LDFAI Calculation(LDFAI_)
+
+**Function**
+
+Calculates the Drought–Flood Abrupt Alternation Index (LDFAI) based on SPEI using sliding time windows. Potential evapotranspiration (PET) is estimated using the Thornthwaite method, and SPEI is calculated from the climatic water balance (precipitation minus PET). The resulting LDFAI quantifies the intensity and direction of drought–flood transitions.
+
+**Input**
+- Meteorological data, including precipitation and temperature
+- Example format: DSSAT weather files (`.WTH`); other data formats can also be used after preprocessing
+
+**Output**
+- SPEI and LDFAI time series
+- Example format: `.csv`; other output formats (e.g., `.nc`) can be supported through adaptation
+
+**Note:** Input and output formats are illustrative. The primary purpose of this code is the SPEI–LDFAI calculation methodology.
 
 ## Figure1a
 
